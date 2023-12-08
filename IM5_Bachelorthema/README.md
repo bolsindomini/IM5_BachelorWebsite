@@ -1,7 +1,7 @@
 # IM5_Bachelorthema
  Abgabe für Dezember
 
-Diese Website wurde sorgfältig mit HTML, CSS und JavaScript erstellt, um ein interaktives und visuell fesselndes Erlebnis zu bieten. Schauen wir uns einige Details der Kodierung an:
+Diese Website wurde mit HTML, CSS und JavaScript erstellt, um ein interaktives Erlebnis zu bieten. Schauen wir uns einige Details der Kodierung an:
 
 HTML-Struktur:
 
