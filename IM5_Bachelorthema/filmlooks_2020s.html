@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmlooks of the 2020s</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            z-index: 1000; /* Ensure the header is above other elements */
+        }
+
+        #slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin-top: 80px; /* Adjusted margin to give space for the fixed header */
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filmlooks of the 2020s</h1>
+    </header>
+    <main>
+        <div id="slideshow-container">
+            <!-- Slides will be added dynamically using JavaScript (slideshow.js) -->
+        </div>
+    </main>
+    <script src="slideshow.js"></script>
+</body>
+</html>

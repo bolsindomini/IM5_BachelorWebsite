@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmlooks and Color Theory</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            transition: color 0.5s; /* Add transition for smooth color change */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .film-links {
+            display: flex;
+            justify-content: space-around; /* Align buttons next to each other with space around */
+            margin-top: 30px;
+            max-width: 70vw; /* Set a maximum width for the film-links container */
+            margin-left: 20vw; /* Align to the right */
+            margin-right: 20vw; /* Align to the left */
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10vh 12vw; /* Set padding based on viewport height and width */
+            border: 1px solid #FFA500;
+            border-radius: 20px;
+            font-size: 25px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #FFA500;
+            color: #333;
+        }
+
+        .welcome-text {
+            text-align: center;
+            color: #ccc;
+            max-width: 800px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .film-facts {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            max-width: 800px;
+            text-align: left;
+            display: none; /* Initially hidden */
+        }
+
+        .show-facts {
+            background-color: #FFA500;
+            color: #333;
+            padding: 15px;
+            border: 1px solid #FFA500;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .show-facts:hover {
+            background-color: #333;
+            color: #FFA500;
+        }
+
+        .film-fact-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .film-fact-list-item {
+            margin-bottom: 15px;
+            border: 1px solid #FFA500;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="titleHeader">
+        <h1>Filmlooks and Color Theory</h1>
+    </header>
+    <main>
+        <div class="film-links">
+            <a href="filmlooks_2000s.html">Filmlooks 2000s</a>
+            <a href="filmlooks_2010s.html">Filmlooks 2010s</a>
+            <a href="filmlooks_2020s.html">Filmlooks 2020s</a>
+        </div>
+        <div class="welcome-text">
+            <p>Welcome to a journey through the filmlooks of the past decades. Have a look at the unique styles defining each era of filmmaking. Just klick the desired decade and let it take you to some iconic looks.</p>
+            <p>
+                I am eager to explore the intersection of film aesthetics and color psychology in my upcoming bachelor thesis. Fascinated by the profound impact of visual elements on storytelling, I aim to investigate how filmmakers strategically utilize color to evoke specific emotions, convey narrative nuances, and shape the overall viewer experience. By delving into the intricate relationship between film looks and color psychology, I hope to gain insights into the deliberate choices directors make in crafting memorable and emotionally resonant cinematic narratives. This exploration will not only contribute to the understanding of visual storytelling techniques but also shed light on the artistry behind the scenes that significantly influences our perception of films.            <!-- Add more paragraphs about color theory -->
+        </div>
+
+        <!-- Show Random Film Facts button -->
+        <div class="show-facts" onclick="toggleFilmFacts()">Show 30 Random Film Facts</div>
+
+        <!-- Film facts in a list -->
+<div class="film-facts" id="filmFacts">
+    <ul class="film-fact-list">
+        <!-- Existing facts -->
+        <li class="film-fact-list-item">Fact 1: The Lumière brothers, Auguste and Louis Lumière, are often credited with the invention of cinema. They held the first public screening of films in 1895.</li>
+        <li class="film-fact-list-item">Fact 2: The first feature-length film is often considered to be "The Story of the Kelly Gang" (1906), an Australian production.</li>
+        <li class="film-fact-list-item">Fact 3: The longest-running film in cinema history is "The Rocky Horror Picture Show," which has been in continuous release since 1975.</li>
+        <li class="film-fact-list-item">Fact 4: The first known female filmmaker is Alice Guy-Blaché, who directed her first film in 1896.</li>
+        <li class="film-fact-list-item">Fact 5: Alfred Hitchcock's film "Psycho" (1960) was the first to show a flushing toilet on screen.</li>
+        <li class="film-fact-list-item">Fact 6: The Academy Awards, or Oscars, were first held in 1929, and the ceremony lasted only 15 minutes.</li>
+        <li class="film-fact-list-item">Fact 7: The highest-grossing film of all time, unadjusted for inflation, is "Avatar" (2009).</li>
+        <li class="film-fact-list-item">Fact 8: The iconic Wilhelm Scream, a stock sound effect used in many films, was first used in the film "Distant Drums" (1951).</li>
+        <li class="film-fact-list-item">Fact 9: Charlie Chaplin's film "City Lights" (1931) is considered one of the greatest silent films ever made.</li>
+        <li class="film-fact-list-item">Fact 10: The first film with synchronized dialogue, or a "talkie," is "The Jazz Singer" (1927).</li>
+        <li class="film-fact-list-item">Fact 11: The first use of special effects in film is often credited to Georges Méliès, who made "A Trip to the Moon" (1902).</li>
+        <li class="film-fact-list-item">Fact 12: The record for the most Oscars won by a single film is held by "Ben-Hur" (1959) and "Titanic" (1997), each with 11 wins.</li>
+        <li class="film-fact-list-item">Fact 13: The shortest film to win an Oscar is "Fresh Guacamole" (2012), with a runtime of 1 minute and 40 seconds.</li>
+        <li class="film-fact-list-item">Fact 14: "Gertie the Dinosaur" (1914) by Winsor McCay is considered the first animated cartoon with a character with a distinct personality.</li>
+        <li class="film-fact-list-item">Fact 15: The first 3D feature film, "Bwana Devil," was released in 1952.</li>
+        <li class="film-fact-list-item">Fact 16: The famous line "Here's looking at you, kid" from "Casablanca" (1942) was improvised by Humphrey Bogart.</li>
+        <li class="film-fact-list-item">Fact 17: Stanley Kubrick's "2001: A Space Odyssey" (1968) contains minimal dialogue and relies heavily on visual storytelling.</li>
+        <li class="film-fact-list-item">Fact 18: The first film to use computer-generated imagery (CGI) was "Westworld" (1973).</li>
+        <li class="film-fact-list-item">Fact 19: "Star Wars: Episode IV - A New Hope" (1977) was initially titled just "Star Wars" until its success led to the expansion of the franchise.</li>
+        <li class="film-fact-list-item">Fact 20: The Cannes Film Festival, one of the most prestigious film festivals, was first held in 1946.</li>
+        <li class="film-fact-list-item">Fact 21: The first fully computer-animated feature film is "Toy Story" (1995).</li>
+        <li class="film-fact-list-item">Fact 22: "The Godfather" (1972) is often considered one of the greatest films in world cinema.</li>
+        <li class="film-fact-list-item">Fact 23: The film "Blair Witch Project" (1999) popularized the found footage genre.</li>
+        <li class="film-fact-list-item">Fact 24: The character Darth Vader from "Star Wars" was voiced by James Earl Jones.</li>
+        <li class="film-fact-list-item">Fact 25: The first film to feature a flushing toilet was "Psycho" (1960), directed by Alfred Hitchcock.</li>
+        <li class="film-fact-list-item">Fact 26: The longest continuous shot in a film is in "The Russian Ark" (2002), shot in a single take at the Hermitage Museum in St. Petersburg.</li>
+        <li class="film-fact-list-item">Fact 27: The film "Jaws" (1975) directed by Steven Spielberg is considered the first summer blockbuster.</li>
+        <li class="film-fact-list-item">Fact 28: The film "E.T. the Extra-Terrestrial" (1982) directed by Steven Spielberg features a character</li>
+        <li class="film-fact-list-item">Fact 29: The first film to be screened for a paying audience was "Workers Leaving the Lumière Factory" (1895).</li>
+        <li class="film-fact-list-item">Fact 30: The iconic shower scene in Alfred Hitchcock's "Psycho" (1960) took seven days to shoot and used 77 different camera angles.</li>
+    </ul>
+</div>
+
+
+    </main>
+
+    <script>
+        // Function to toggle film facts visibility
+        function toggleFilmFacts() {
+            const filmFacts = document.getElementById('filmFacts');
+            filmFacts.style.display = filmFacts.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Function to generate a random color in hex format
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Function to update the title color at regular intervals
+        function updateTitleColor() {
+            const titleHeader = document.getElementById('titleHeader');
+            titleHeader.style.color = getRandomColor();
+        }
+
+        // Update the title color every 3 seconds (adjust the interval as needed)
+        setInterval(updateTitleColor, 3000);
+    </script>
+</body>
+
+</html>

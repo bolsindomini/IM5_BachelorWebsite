@@ -1,0 +1,56 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.film-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px; /* Adjusted size */
+  border: 1px solid #FFA500;
+  border-radius: 20px; /* Rounded edges */
+  font-size: 18px; /* Adjusted font size */
+}
+
+a:hover {
+  background-color: #FFA500;
+  color: #333;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
